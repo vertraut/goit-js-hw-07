@@ -1,0 +1,27 @@
+.task {
+  font-size: 34px;
+  color: rgb(226, 13, 13);
+  font-weight: 700;
+}
+
+.gallery {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.gallery li:not(:last-child) {
+  margin-right: 20px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
