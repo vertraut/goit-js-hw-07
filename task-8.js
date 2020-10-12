@@ -16,7 +16,7 @@ function createBoxes(amount) {
   let currentSizeDiv;
 
   for (let i = 0; i < amount; i += 1) { //создаем в цикле нужно кол-во дивов
-    console.log('div', i);
+    
     divBlocks[i] = document.createElement('div')
     divBlocks[i].textContent = i+1;
     currentSizeDiv = initSizeDiv + (i * 10);
@@ -25,8 +25,7 @@ function createBoxes(amount) {
     divBlocks[i].style.width = `${currentSizeDiv}px`
     divBlocks[i].style.height = `${currentSizeDiv}px`
       }
-  console.log("divBlocks", divBlocks)
-  divConteinerEl.append(...divBlocks);
+   divConteinerEl.append(...divBlocks);
 }
 
 function createBoxesListener() {
@@ -42,9 +41,7 @@ function randomColorRGB() {
   const R = Math.floor(Math.random() * 256)
   const G = Math.floor(Math.random() * 256)
   const B = Math.floor(Math.random() * 256)
-
-  console.log(`rgb(${R},${G},${B})`)
- 
+  
   return (`rgb(${R},${G},${B})`)
   
  }
